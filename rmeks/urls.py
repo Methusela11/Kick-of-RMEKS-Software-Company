@@ -9,5 +9,4 @@ urlpatterns = [
     path('methusela-enoch/', views.cv, name='cv'),
     path('services/', views.services, name='services'),
     path('about/', views.about, name='about'),
-
 ]
