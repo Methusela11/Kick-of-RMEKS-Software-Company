@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 import dj_database_url
+from django.conf.urls.static import static
 
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -9,6 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-dev-key')
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'Methusela-RMEKS.onrender.com').split(',')
+
 
 # Application definition
 INSTALLED_APPS = [
